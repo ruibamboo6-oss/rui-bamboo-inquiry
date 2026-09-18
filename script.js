@@ -2,6 +2,8 @@ function sendInquiry() {
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const country = document.getElementById("country").value;
+    const business = document.getElementById("business").value;
     const product = document.getElementById("product").value;
     const message = document.getElementById("message").value;
 
@@ -19,6 +21,8 @@ function sendInquiry() {
         "Inquiry submitted successfully!\n\n" +
         "Company: " + name +
         "\nEmail: " + email +
+        "\nCountry: " + country +
+        "\nBusiness Type: " + business +
         "\nProduct: " + product +
         "\nMessage: " + message
     );
