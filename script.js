@@ -18,14 +18,5 @@ function sendInquiry() {
         return;
     }
 
-    alert(
-        "Inquiry submitted successfully!\n\n" +
-        "Company: " + name +
-        "\nEmail: " + email +
-        "\nCountry: " + country +
-        "\nBusiness Type: " + business +
-        "\nProduct: " + product +
-        "\nQuantity: " + quantity +
-        "\nMessage: " + message
-    );
+    document.getElementById("success-message").style.display = "block";
 }
