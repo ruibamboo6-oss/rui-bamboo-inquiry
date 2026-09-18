@@ -118,3 +118,11 @@ nav a {
     text-decoration: none;
     border-radius: 8px;
 }
+.success-message {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #eaf3ed;
+    text-align: center;
+}
