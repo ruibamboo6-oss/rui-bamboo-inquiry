@@ -1,104 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Rui Bamboo Inquiry</title>
 </head>
- 
+
 <body>
 
     <div class="container">
-   <header class="header">
-    <div class="logo">RUI BAMBOO</div>
 
-    <nav>
-        <a href="#products">Products</a>
-        <a href="#inquiry">Contact Us</a>
-    </nav>
-</header>
-    <p>Welcome to Rui Bamboo.</p>
+        <header class="header">
 
-   <section class="hero" id="products">
+            <div class="logo">RUI BAMBOO</div>
 
-    <div class="hero-text">
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#inquiry">Contact Us</a>
+            </nav>
 
-        <h1>Bamboo Fiber Tableware</h1>
+        </header>
 
-        <h2>For Global Wholesale Buyers</h2>
+        <p>Welcome to Rui Bamboo.</p>
 
-        <p>
-            Replace Plastic Tableware With Bamboo Fiber Solutions.
-        </p>
 
-        <a class="button" href="#inquiry">Get a Quote</a>
+        <!-- Hero Section -->
+
+        <section class="hero" id="products">
+
+            <div class="hero-text">
+
+                <h1>Bamboo Fiber Tableware</h1>
+
+                <h2>For Global Wholesale Buyers</h2>
+
+                <p>
+                    Replace Plastic Tableware With Bamboo Fiber Solutions.
+                </p>
+
+                <a class="button" href="#inquiry">Get a Quote</a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="bamboo-bowl.jpg"
+                     alt="Rui Bamboo Bamboo Fiber Bowl">
+
+            </div>
+
+        </section>
+
+
+        <!-- Inquiry Form -->
+
+        <section id="inquiry">
+
+            <h3>Product Inquiry</h3>
+
+            <form action="https://formspree.io/f/mqpakvne" method="POST">
+
+                <label>Company Name</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="company"
+                    placeholder="Your Company Name">
+
+                <br><br>
+
+
+                <label>Email</label>
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email">
+
+                <br><br>
+
+
+                <label>Country</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Your Country">
+
+                <br><br>
+
+
+                <label>Business Type</label>
+                <br>
+
+                <select id="business" name="business_type">
+
+                    <option>Importer</option>
+                    <option>Distributor</option>
+                    <option>Wholesale Buyer</option>
+                    <option>Restaurant</option>
+                    <option>Retailer</option>
+                    <option>Individual</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Product</label>
+                <br>
+
+                <select id="product" name="product">
+
+                    <option>Bamboo Fiber Bowl</option>
+                    <option>Bamboo Fiber Plate</option>
+                    <option>Bamboo Fiber Food Container</option>
+                    <option>Other</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Estimated Quantity</label>
+                <br>
+
+                <select id="quantity" name="quantity">
+
+                    <option>Sample Only</option>
+                    <option>Less than 1 Container</option>
+                    <option>1–5 Containers</option>
+                    <option>More than 5 Containers</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Message</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Tell us your requirements"></textarea>
+
+                <br><br>
+
+
+                <button type="submit" onclick="sendInquiry()">
+                    Send Inquiry
+                </button>
+
+
+                <div id="success-message" class="success-message">
+
+                    <h3>Thank You!</h3>
+
+                    <p>
+                        Your inquiry has been submitted successfully.
+                    </p>
+
+                    <p>
+                        Our team will contact you soon.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </section>
 
     </div>
 
-    <div class="hero-image">
-        <img src="bamboo-bowl.jpg" alt="Rui Bamboo Bamboo Fiber Bowl">
-    </div>
 
-</section>
-
-    <h3>Product Inquiry</h3>
-
-    <label>Company Name</label>
-    <br>
-   <input type="text" id="name" placeholder="Your Company Name">
-    <br><br>
-
-<label>Email</label>
-<br>
-<input type="email" id="email" placeholder="Your Email">
-    <br><br>
-<label>Country</label>
-<br>
-<input type="text" id="country" placeholder="Your Country">
-<br><br>
-
-<label>Business Type</label>
-<br>
-<select id="business">
-    <option>Importer</option>
-    <option>Distributor</option>
-    <option>Wholesale Buyer</option>
-    <option>Restaurant</option>
-    <option>Retailer</option>
-    <option>Individual</option>
-</select>
-<br><br>
-    <label>Product</label>
-    <br>
-<select id="product">
-    <option>Bamboo Fiber Bowl</option>
-    <option>Bamboo Fiber Plate</option>
-    <option>Bamboo Fiber Food Container</option>
-    <option>Other</option>
-</select><label>Estimated Quantity</label>
-<br>
-<select id="quantity">
-    <option>Sample Only</option>
-    <option>Less than 1 Container</option>
-    <option>1–5 Containers</option>
-    <option>More than 5 Containers</option>
-</select>
-<br><br>
-    <br><br>
-
-    <label>Message</label>
-    <br>
-   <textarea id="message" rows="5" cols="40" placeholder="Tell us your requirements"></textarea>
-    <br><br>
-
-<button onclick="sendInquiry()">Send Inquiry</button>
-        <div id="success-message" class="success-message">
-    <h3>Thank You!</h3>
-    <p>Your inquiry has been submitted successfully.</p>
-    <p>Our team will contact you soon.</p>
-</div>
-    </div>
     <script src="script.js"></script>
+
 </body>
+
 </html>
