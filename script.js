@@ -1,12 +1,9 @@
-function sendInquiry() {
+function sendInquiry(event) {
+
+    event.preventDefault();
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const country = document.getElementById("country").value;
-    const business = document.getElementById("business").value;
-    const product = document.getElementById("product").value;
-    const quantity = document.getElementById("quantity").value;
-    const message = document.getElementById("message").value;
 
     if (name === "") {
         alert("Please enter your company name.");
@@ -19,4 +16,6 @@ function sendInquiry() {
     }
 
     document.getElementById("success-message").style.display = "block";
+
+    document.querySelector("form").submit();
 }
