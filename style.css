@@ -165,4 +165,34 @@ nav a {
 .product-card p {
     color: #666;
     line-height: 1.6;
+}@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
 }
