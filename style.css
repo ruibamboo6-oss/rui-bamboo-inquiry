@@ -189,6 +189,9 @@ nav a {
     .product-grid {
         grid-template-columns: 1fr;
     }
+    .process-grid {
+    grid-template-columns: 1fr;
+}
 
     .container {
         width: 100%;
