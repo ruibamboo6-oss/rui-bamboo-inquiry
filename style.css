@@ -269,7 +269,7 @@ button:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-..process-number {
+.process-number {
     width: 55px;
     height: 55px;
     line-height: 55px;
@@ -280,8 +280,16 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
 }
-
+.process-number::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #2F5D3A;
+    margin: 18px auto 0;
+}
 .process-card h3 {
+    margin-top: 28px;
     margin-bottom: 12px;
 }
 
