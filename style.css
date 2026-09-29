@@ -279,8 +279,17 @@ button:hover {
 .strength-card {
     background: white;
     padding: 30px 20px;
-    border-radius: 12px;
+    border-radius: 14px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.strength-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
 
 .strength-number {
     font-size: 36px;
