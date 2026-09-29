@@ -258,6 +258,74 @@ button:hover {
 
 
 
+/* B2B Supply Solutions */
+
+.b2b-solutions {
+    padding: 80px 40px;
+    background: #f5f7f2;
+    text-align: center;
+}
+
+.b2b-solutions h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #2F5D3A;
+}
+
+.b2b-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.b2b-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 14px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b2b-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.b2b-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2F5D3A;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.b2b-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.b2b-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+
+
+
+
 /* =========================
    Why Rui Bamboo
 ========================= */
