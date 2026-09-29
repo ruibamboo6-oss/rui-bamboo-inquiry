@@ -245,6 +245,17 @@ button:hover {
     text-decoration: underline;
 }
 
+.products-cta {
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.products-cta p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
 
 
 /* =========================
