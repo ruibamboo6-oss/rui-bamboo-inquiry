@@ -211,6 +211,17 @@ button:hover {
     display: block;
 }
 
+.product-type {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: #f0f5f1;
+    color: #2F5D3A;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .product-card h3 {
     color: #2F5D3A;
     margin-top: 20px;
