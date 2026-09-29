@@ -232,6 +232,20 @@ button:hover {
     line-height: 1.6;
 }
 
+.product-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2F5D3A;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+
 
 /* =========================
    Why Rui Bamboo
